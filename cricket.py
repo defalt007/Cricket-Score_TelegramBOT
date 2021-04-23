@@ -16,7 +16,7 @@ def match():
     page = requests.get(url)
     soup = BeautifulSoup(page.text,'html.parser')
     print(soup)
-    headers = soup.find_all(class_="cb-col cb-col-100 cb-lv-main")
+    headers = soup.find_all(class_="cb-col cb-col-100 cb-plyr-tbody cb-rank-hdr cb-lv-main")
     print(soup)
 
 
